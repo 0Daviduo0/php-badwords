@@ -29,7 +29,7 @@
     <p>
         <?php
         // Censoring based on the given word with $_GET["badword"]
-        $censoredPhrase = str_replace($_GET["badword"], "***", $phrase, $censoredPhrase);
+        $censoredPhrase = str_replace($_GET["badword"], "***", $phrase);
         echo $censoredPhrase;
         ?>
     </p>
