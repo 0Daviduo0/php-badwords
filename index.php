@@ -16,5 +16,15 @@
         ?>
     </p>
 
+    <h3>
+
+        String length:
+        <?php
+            // Getting phrase length
+            echo strlen($phrase);
+        ?>
+
+    </h3>
+
 </body>
 </html>
