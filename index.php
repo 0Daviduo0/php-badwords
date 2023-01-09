@@ -26,5 +26,13 @@
 
     </h3>
 
+    <p>
+        <?php
+        // Censoring and printing based on the given word with $_GET["badword"]
+        echo str_replace($_GET["badword"], "***", $phrase, $censoredPhrase);
+        echo $censoredPhrase;
+        ?>
+    </p>
+
 </body>
 </html>
