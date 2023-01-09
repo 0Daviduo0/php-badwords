@@ -28,11 +28,21 @@
 
     <p>
         <?php
-            // Censoring and printing based on the given word with $_GET["badword"]
-            echo str_replace($_GET["badword"], "***", $phrase, $censoredPhrase);
-            echo $censoredPhrase;
+        // Censoring based on the given word with $_GET["badword"]
+        $censoredPhrase = str_replace($_GET["badword"], "***", $phrase, $censoredPhrase);
+        echo $censoredPhrase;
         ?>
     </p>
+
+    <h3>
+
+        String length:
+        <?php
+            // Getting phrase length
+            echo strlen($censoredPhrase);
+        ?>
+
+    </h3>
 
 </body>
 </html>
